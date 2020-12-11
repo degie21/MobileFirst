@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+img{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.loader {
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+  }
+.nav-container{
+    background: #f6f5f5;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 1em 1em;
+    header{
+        font-size: 4em;
+    }
+    .activator {
+        margin: auto auto;
+        padding: 0.5em;
+        border-radius: 100%;
+        background: #ee6f57;
+        cursor: pointer;
+    }
+    .nav-bar{
+        display: flex;
+    }
+    .navbar{
+        background: #1f3c88;
+        border-radius: 5em 0 0 5em;
+        padding: .5em;
+        clip-path: ellipse(50% 50% at -50% 50%);
+        margin: auto auto;
+        margin-right: 0;
+        ul {
+            display: flex;
+
+            li a {
+                display: block;
+                padding: .5em;
+                border-radius: 23%;
+
+                &:hover {
+                    background: #1a3372;
+                }
+
+                a {
+                    opacity: 0;
+                    transform: translateX(-10px);
+                }
+            }
+        }
+    }
+}
+.front-page{
+    background: #fcfcfc;
+    padding: 0 1em;
+    margin-top: 1em;
+    .content{
+        display: grid;
+        grid-template-columns: 80% auto;
+        .content-p{
+            padding: 2em;
+            border-radius: 13% 0 0 13%;
+            height: 60vh;
+            background: #ee6f57;
+            .front-title{
+                letter-spacing: 2px;
+                font-size: 2.5em;
+                color: #070d59;
+            }
+            .front-desc{
+                width: 70%;
+                color: white;
+            }
+        }
+        img{
+            border-radius: 0 13% 13% 0;
+            z-index: 1;
+            margin: 40vh 0 auto -50%;
+            width: 60vw;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+  }

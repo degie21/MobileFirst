@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+img {
+  width: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loader {
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+}
+
+.nav-container {
+  background: #f6f5f5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  padding: 1em 1em;
+}
+
+.nav-container header {
+  font-size: 4em;
+}
+
+.nav-container .activator {
+  margin: auto auto;
+  padding: 0.5em;
+  border-radius: 100%;
+  background: #ee6f57;
+  cursor: pointer;
+}
+
+.nav-container .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container .navbar {
+  background: #1f3c88;
+  border-radius: 5em 0 0 5em;
+  padding: .5em;
+  -webkit-clip-path: ellipse(50% 50% at -50% 50%);
+          clip-path: ellipse(50% 50% at -50% 50%);
+  margin: auto auto;
+  margin-right: 0;
+}
+
+.nav-container .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container .navbar ul li a {
+  display: block;
+  padding: .5em;
+  border-radius: 23%;
+}
+
+.nav-container .navbar ul li a:hover {
+  background: #1a3372;
+}
+
+.nav-container .navbar ul li a a {
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.front-page {
+  background: #fcfcfc;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+
+.front-page .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% auto;
+      grid-template-columns: 80% auto;
+}
+
+.front-page .content .content-p {
+  padding: 2em;
+  border-radius: 13% 0 0 13%;
+  height: 60vh;
+  background: #ee6f57;
+}
+
+.front-page .content .content-p .front-title {
+  letter-spacing: 2px;
+  font-size: 2.5em;
+  color: #070d59;
+}
+
+.front-page .content .content-p .front-desc {
+  width: 70%;
+  color: white;
+}
+
+.front-page .content img {
+  border-radius: 0 13% 13% 0;
+  z-index: 1;
+  margin: 40vh 0 auto -50%;
+  width: 60vw;
+}
+/*# sourceMappingURL=style.css.map */
